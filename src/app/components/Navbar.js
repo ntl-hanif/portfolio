@@ -2,7 +2,7 @@
 import React from "react";
 import { FaHome, FaUser, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+//test
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top">
