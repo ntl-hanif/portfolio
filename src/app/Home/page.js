@@ -3,7 +3,8 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HomeComponent from "../components/HomeComponent";
-import ContactComponent from "../components/ContactComponent";
+import AboutComponent from "../components/AboutContactComponent";
+// import ProjectsComponent from "../components/ProjectsComponent";
 
 export default function Home() {
   useEffect(() => {
@@ -13,9 +14,9 @@ export default function Home() {
 
   return (
   <>
- <HomeComponent/>
- <ContactComponent/>
-
+    <HomeComponent />
+    <AboutComponent />
+    {/* <ProjectsComponent /> */}
   </>
   );
 }

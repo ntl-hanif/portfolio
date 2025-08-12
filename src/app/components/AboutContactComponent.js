@@ -3,23 +3,24 @@ import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaEnvelope, FaLinkedin, FaPhone } from "react-icons/fa";
 
-export default function About() {
+export default function AboutContactComponent() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
   return (
     <section
+      id="about"
       style={{
-        background: "#000", // Full black background
+        background: "#000",
         color: "#fff",
         padding: "80px 0",
-        minHeight: "100vh", // Full screen height for presence
       }}
     >
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row align-items-center mb-5">
           {/* Left Column - Profile Image */}
           <div
             className="col-lg-5 text-center mb-4 mb-lg-0"
@@ -48,13 +49,12 @@ export default function About() {
                 color: "#dcdcdc",
               }}
             >
-              I am a <strong>Senior SQA Engineer</strong> with proven expertise
-              in{" "}
-              <span className="fw-bold text-info">manual</span> and{" "}
-              <span className="fw-bold text-info">automation testing</span> for
-              web, mobile, and POS platforms. Skilled in{" "}
-              <strong>integration</strong>, <strong>regression</strong>,{" "}
-              <strong>UAT</strong>, and <strong>performance testing</strong>{" "}
+              <strong>Principal SQA Engineer</strong> with <strong><span className="fw-bold text-light">2.5 years</span>,{" "}</strong> of proven expertise in{" "}
+              <span className="fw-bold text-info">Manual</span> and{" "}
+              <span className="fw-bold text-info">Automation</span> testing for
+              Web, Mobile (Android & iOS), and POS platforms. Skilled in{" "}
+              <strong>Integration</strong>, <strong>Regression</strong>,{" "}
+              <strong>UAT</strong>, and <strong>Performance Testing</strong>{" "}
               using <span className="fw-bold text-light">JMeter</span>,{" "}
               <span className="fw-bold text-light">Cypress</span>,{" "}
               <span className="fw-bold text-light">Postman</span>, and{" "}
@@ -77,6 +77,64 @@ export default function About() {
               collaborative, fast-paced environments to deliver high-quality
               software solutions.
             </p>
+          </div>
+        </div>
+
+        {/* ---------- breathing space between About and Contact ---------- */}
+        <div className="row">
+          <div className="col-12 my-5" />
+        </div>
+
+        {/* Contact Row */}
+        <div className="text-center mb-5">
+          <div className="row g-4 justify-content-center">
+            <div
+              className="col-md-4 col-sm-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <FaEnvelope size={30} className="mb-2 text-info" />
+              <p>
+                <a
+                  href="mailto:hanif355938@gmail.com"
+                  className="text-white text-decoration-none"
+                >
+                  hanif355938@gmail.com
+                </a>
+              </p>
+            </div>
+            <div
+              className="col-md-4 col-sm-6"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <FaPhone size={30} className="mb-2 text-success" />
+              <p>
+                <a
+                  href="tel:+92-309-4459278"
+                  className="text-white text-decoration-none"
+                >
+                  +92-309-4459278
+                </a>
+              </p>
+            </div>
+            <div
+              className="col-md-4 col-sm-6"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <FaLinkedin size={30} className="mb-2 text-primary" />
+              <p>
+                <a
+                  href="https://linkedin.com/in/muhammad-hanif-a030b91a3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white text-decoration-none"
+                >
+                  https://www.linkedin.com/in/muhammad-hanif-a030b91a3
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
